@@ -11,15 +11,15 @@ private:
 	float interestRate;
 public:
 
-	SavingsAccount() {interestRate= 0.05f;}
+	SavingsAccount() {interestRate= 0.05;}
 
-	SavingsAccount(double init_bal,float rate) :Account() {
-		//rate = 0.05;
+	SavingsAccount(double init_bal,float rate) :Account(balance=init_bal) {
+		interestRate=rate;
 
-		rate =init_bal* interestRate;
+		//rate =init_bal* interestRate;
 		
-		rate = init_bal; //interestRate=balance;
-		balance = init_bal;
+		//rate = init_bal; //interestRate=balance;
+		//balance = init_bal;
 		
 
 

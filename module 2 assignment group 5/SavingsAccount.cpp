@@ -9,9 +9,11 @@
 double SavingsAccount::CalcInterest()
 
 {
-
-
+	double result;
 	
-	return balance;
+	result= interestRate* balance;
+	
+	
+	return balance+result;
 		
 }

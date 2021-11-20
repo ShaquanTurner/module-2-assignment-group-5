@@ -22,7 +22,7 @@ int option;
 
 int main() {
 	Account cst{2000};
-	SavingsAccount sa{};
+	SavingsAccount sa{1000,0.08};
 	ChequingAccount ca; 
 
 
@@ -38,7 +38,7 @@ int main() {
 		switch (option)
 		{
 		case 1: {
-			cout << "\n Balance Available  : $" << cst.getBalance() << endl;
+			cout << "\n Balance Available  : $" << sa.getBalance() << endl;
 
 			system("pause");
 			break;
@@ -47,9 +47,9 @@ int main() {
 			double deposit = 0.0;
 			cout << " Amount Deposited : $";
 			cin >> deposit;
-			cst.deposit(deposit);
+			sa.deposit(deposit);
 		     
-			cout << "\n Balance Available  : $" << cst.getBalance() << endl;
+			cout << "\n Balance Available  : $" << sa.getBalance() << endl;// when testing the funtionally of derivred class a by use the object class  change the cst. to sa./ca.
 			 cout << "\n interrest rate  is :$ " << sa.CalcInterest()<<endl;
 
 
